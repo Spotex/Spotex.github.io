@@ -1,14 +1,20 @@
 window.onload=function openPreloader(){
-	var d = document.getElementById("test");
+	var d = document.getElementById("preloader");
 	d.classList.add('m_visible');
 };
 setTimeout(function hidePreloader(){
-	var d = document.getElementById("test");
+	var d = document.getElementById("preloader");
 	d.classList.remove('m_visible');
 	d.classList.add('m_invisible');
 	setTimeout(function(){ d.classList.remove('m_invisible'); }, 3000);
 }, 4000);
 
+const onOpen = () => {
+  alert('Its open function')
+};
+const onClose = () => {
+  alert('Its close function')
+};
 
 
 
