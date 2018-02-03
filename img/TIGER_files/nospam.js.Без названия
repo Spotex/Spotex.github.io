@@ -1,0 +1,32 @@
+window.onload=function onOpen(){
+	var d = document.getElementById("preloader");
+	d.classList.add('m_visible');
+};
+setTimeout(function onClose(){
+	var d = document.getElementById("preloader");
+	d.classList.remove('m_visible');
+	d.classList.add('m_invisible');
+	setTimeout(function(){ d.classList.remove('m_invisible'); }, 3000);
+}, 4000);
+
+const onOpen = () => {
+  alert('Its open function')
+};
+const onClose = () => {
+  alert('Its close function')
+};
+
+
+
+
+
+
+/*
+$(function hidePreloader(){ 
+    $.when( $('.l_preloader').animate({ opacity: 0.0 }, 2000) ).then(function(){ 
+         $('.l_preloader').hide(); 
+    });
+});*/
+
+
+
