@@ -1,17 +1,13 @@
 
 const onOpen = () => {
-  function openPreloader(){
-	var d = document.getElementById("preloader");
-	d.classList.add('m_visible');
-  };
+	let elem = document.getElementById("preloader");
+	elem.classList.add('m_visible');
 };
 const onClose = () => {
-  function hidePreloader(){
-	var d = document.getElementById("preloader");
-	d.classList.remove('m_visible');
-	d.classList.add('m_invisible');
-	setTimeout(function(){ d.classList.remove('m_invisible'); }, 3000);
-  };
+	let elem = document.getElementById("preloader");
+	elem.classList.remove('m_visible');
+	elem.classList.add('m_invisible');
+	setTimeout(function(){ elem.classList.remove('m_invisible'); }, 3000);
 };
 
 
