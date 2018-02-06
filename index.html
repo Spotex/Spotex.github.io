@@ -4,9 +4,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TIGER</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-iB8JVLEgtN_h7aee7PGUd7Qj81zUSqs&callback=initMap"
+	  async defer>
+	</script>
 	<link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/nospam.js"></script>
+	<script src="js/map.js"></script>
 </head>
 <body>
 	<div class="l_main">
@@ -18,6 +22,11 @@
 				loading<div class="dot">.</div>
 				<div class="dot">.</div>
 				<div class="dot">.</div>
+			</div>
+		</div>
+		<div id="map" class="l_map">
+			<div class="b_skip">
+				<a href="#">- skip a contacts</a>
 			</div>
 		</div>
 		<div class="l_page">
