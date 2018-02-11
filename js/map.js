@@ -329,7 +329,7 @@ function initialize() {
        styles: style
       }
       if (window.innerWidth < 640){
-        var myLatlng = new google.maps.LatLng(49.556380, 25.594389);
+        var myLatlng = new google.maps.LatLng(49.556380, 25.595389);
         mapOptions = {
          zoom: 16,
          center: myLatlng,
