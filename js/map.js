@@ -1,8 +1,8 @@
 function initialize() {
        var myLatlng = new google.maps.LatLng(49.555887, 25.580942);
-       popupContent1 = '<p style="color: #fff; text-transform: uppercase; font-weight: 400; font-size: 18px" class="content"><span style="color: #ff0105; font-weight: bold">restoran:</span><br><br>ternopil,<br> kulchytska 1/2</p>';
-       popupContent2 = '<p style="color: #fff; text-transform: uppercase; font-weight: 400; font-size: 18px" class="content"><span style="color: #ff0105; font-weight: bold">restoran:</span><br><br>ternopil,<br> bandery ave 84a</p>';
-       popupContent3 = '<p style="color: #fff; text-transform: uppercase; font-weight: 400; font-size: 18px" class="content"><span style="color: #ff0105; font-weight: bold">restoran:</span><br><br>ternopil,<br> stepova 42</p>';
+       popupContent1 = '<p style="color: #fff; text-transform: uppercase; font-weight: 400; font-size: 18px; letter-spacing: 2px" class="content"><span style="color: #ff0105; font-weight: bold">restoran:</span><br><br>ternopil,<br> kulchytska 1/2</p>';
+       popupContent2 = '<p style="color: #fff; text-transform: uppercase; font-weight: 400; font-size: 18px; letter-spacing: 2px" class="content"><span style="color: #ff0105; font-weight: bold">restoran:</span><br><br>ternopil,<br> bandery ave 84a</p>';
+       popupContent3 = '<p style="color: #fff; text-transform: uppercase; font-weight: 400; font-size: 18px; letter-spacing: 2px" class="content"><span style="color: #ff0105; font-weight: bold">restoran:</span><br><br>ternopil,<br> stepova 42</p>';
 
       style = [
         {
