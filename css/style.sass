@@ -83,6 +83,8 @@ table
     animation: invisible 3s 1 0s ease
     animation-fill-mode: forwards
   //map
+  .l_map
+    display: none
   .b_map
     position: fixed
     width: 100%
@@ -90,19 +92,33 @@ table
     left: 0
     top: 0
     z-index: 5      
+  .b_menu
+    transform: rotate(90deg)
+    position: fixed
+    top: 100px
+    right: -4%
+    font-size: 16px
+    font-weight: 300
+    text-transform: uppercase
+    z-index: 6 
+    a
+      margin: 0 0 0 30px
+      transition: 0.5s
+    a:hover
+      color: #ff0105
   .b_skip
     position: fixed
     left: 50%
     transform: translateX(-50%)
     bottom: 5%
-    font-size: 18px
-    font-weight: 700
+    font-size: 16px
+    font-weight: 300
     text-transform: uppercase
     letter-spacing: 3px
     z-index: 6
     transition: 0.5s
   .b_skip:hover
-    opacity: 0.75      
+    opacity: 0.6      
   .gm-style-mtc > div,
   .gmnoprint > div,
   .gm-fullscreen-control,
@@ -168,7 +184,117 @@ table
     transform: rotate(45deg)
   
 
-  
+  //our story block
+  .l_story
+    background: url('../img/bg-story.png') no-repeat 50% 50%
+    background-size: cover
+    .b_skip a:nth-of-type(2), .b_contacts
+      display: none 
+    .b_list
+      display: inline-block 
+      vertical-align: top 
+      text-transform: uppercase
+      font-weight: 300
+      font-size: 16px
+      .i_title
+        font-weight: 900
+      .i_title::before
+        content: '+'
+        position: fixed
+        margin-left: -25px
+        font-size: 16px
+      a
+        line-height: 24px
+        transition: 0.75s
+      a:hover
+        color: #ff0105
+      .i_title:hover a
+        color: #fff
+    .b_restoran
+      margin: 40px 0 0 42%
+    .b_about
+      margin: 40px 0 0 7%
+
+    .l_restoran
+      width: 48%
+      position: fixed
+      bottom: -5px
+      h1
+        font-size: 56px
+        text-transform: uppercase
+        letter-spacing: 5px
+      .b_caption::after
+        content: ' '
+        position: absolute
+        width: 40px
+        height: 2px
+        background: #fff
+        margin: 2px 0 0 3px
+      .b_caption, .b_phone, .b_mail, .b_adress
+        padding: 0 0 0 6.5%
+      .b_phone, .b_mail, .b_adress
+        line-height: 26px
+        font-weight: 300
+      .b_phone
+        white-space: pre-wrap
+        margin: 15px 0 0 0
+        color: #ff0105
+        .i_number::before
+          content: '+'
+          position: fixed
+          margin-left: -10px
+      .b_adress
+        display: inline-block 
+      .b_links
+        float: right
+        a
+          display: inline-block
+          margin: 0 0 0 20px  
+        img
+          width: 22px
+          transition: 0.3s
+        a:hover img
+          transform: scale(1.15)
+          opacity: 0.7
+      .b_photo
+        margin: 40px 0 0 0
+        width: 100%
+        img
+          width: 100%
+      .b_photo::before
+        content: ' '
+        position: absolute
+        width: 2px
+        height: 40px
+        background: #fff
+        left: 7%
+        margin-top: -20px
+
+    .l_about
+      text-transform: uppercase
+      margin: 5% 0 0 55%
+      .b_counter
+        margin: 0 0 0 5px
+      h1
+        font-size: 56px
+        text-transform: uppercase
+        letter-spacing: 5px
+        color: #ff0105
+      .b_text
+        padding: 0 0 0 20px
+        margin: 10px 0 0 10px
+        border-left: 1px solid #ff0105
+        line-height: 24px
+        font-weight: 300
+
+
+        
+
+    
+
+
+
+      
 
   
   
@@ -190,6 +316,7 @@ table
 
 
 @media screen and (max-width: 415px)
+
   .l_main
     width: 100%
     height: 100%
@@ -243,6 +370,8 @@ table
       background: rgba(0,0,0,0.33)
 
   //map
+  .l_map
+    display: none 
   .b_map
     position: fixed
     width: 100%
@@ -258,6 +387,20 @@ table
     text-transform: uppercase
     z-index: 6
     transition: 0.5s
+  .b_menu
+    transform: rotate(90deg)
+    position: fixed
+    top: 75px
+    right: -15%
+    font-size: 16px
+    font-weight: 300
+    text-transform: uppercase
+    z-index: 6 
+    a
+      margin: 0 0 0 30px
+      transition: 0.5s
+    a:hover
+      color: #ff0105
   .b_skip:hover
     opacity: 0.75      
   .gm-style-mtc > div,
@@ -323,6 +466,56 @@ table
     transform: rotate(-45deg)
   .gm-style-iw + div::after 
     transform: rotate(45deg)
+
+  .b_skip a:nth-of-type(1), .b_restoran, .l_restoran, .b_text p:nth-of-type(2)
+    display: none
+
+  .l_story
+    background: url('../img/bg-small-story.png') no-repeat 50% 50%
+    background-size: cover
+    .b_contacts
+      text-transform: uppercase
+      font-weight: 300
+      font-size: 16px
+      margin: 10px 0 0 42%
+      a
+        line-height: 24px
+        transition: 0.75s
+      a:hover
+        color: #ff0105
+    .b_about
+      text-transform: uppercase
+      font-weight: 300
+      font-size: 16px
+      margin: 20px 0 0 42%
+      a
+        line-height: 30px
+        transition: 0.75s
+      a:hover
+        color: #ff0105
+
+    .l_about
+      text-transform: uppercase
+      margin: 20px auto 0
+      width: 305px
+      .b_counter
+        margin: 0 0 0 5px
+      h1
+        font-size: 46px
+        text-transform: uppercase
+        letter-spacing: 2px
+        color: #ff0105
+      .b_text
+        padding: 0 0 0 20px
+        margin: 10px 0 0 10px
+        border-left: 2px solid #ff0105
+        line-height: 24px
+        font-weight: 300
+        
+        br
+          display: none
+
+  
 
 
   .l_page
