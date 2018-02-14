@@ -96,8 +96,8 @@ table
     transform: rotate(90deg)
     position: fixed
     top: 100px
-    right: -4%
-    font-size: 16px
+    right: -2.5%
+    font-size: 18px
     font-weight: 300
     text-transform: uppercase
     z-index: 6 
@@ -106,12 +106,22 @@ table
       transition: 0.5s
     a:hover
       color: #ff0105
+  .b_copyright
+    position: fixed
+    position: fixed
+    left: 3%
+    transform: translateX(-3%)
+    bottom: 6%
+    font-size: 14px
+    font-weight: 300
+    text-transform: uppercase
+    z-index: 6
   .b_skip
     position: fixed
     left: 50%
     transform: translateX(-50%)
     bottom: 5%
-    font-size: 16px
+    font-size: 18px
     font-weight: 300
     text-transform: uppercase
     letter-spacing: 3px
@@ -188,6 +198,7 @@ table
   .l_story
     background: url('../img/bg-story.png') no-repeat 50% 50%
     background-size: cover
+    font-size: 18px
     .b_skip a:nth-of-type(2), .b_contacts
       display: none 
     .b_list
@@ -195,32 +206,67 @@ table
       vertical-align: top 
       text-transform: uppercase
       font-weight: 300
-      font-size: 16px
       .i_title
         font-weight: 900
       .i_title::before
         content: '+'
         position: fixed
-        margin-left: -25px
+        margin-left: -20px
         font-size: 16px
       a
-        line-height: 24px
+        line-height: 36px
         transition: 0.75s
       a:hover
         color: #ff0105
       .i_title:hover a
         color: #fff
-    .b_restoran
-      margin: 40px 0 0 42%
     .b_about
-      margin: 40px 0 0 7%
+      margin: 40px 0 0 40%
+      text-align: right
+    .b_restoran
+      margin: 40px 0 0 5%
 
-    .l_restoran
-      width: 48%
+    //paternal layout content
+    .l_content
+      width: 100%
+      height: 66%
       position: fixed
-      bottom: -5px
+      bottom: 0
+      left: 0
+    //layout about
+    .l_about
+      width: 46%
+      margin: 0 0 0 3%
+      display: inline-block 
+      vertical-align: top 
+      text-transform: uppercase
       h1
-        font-size: 56px
+        font-size: 64px
+        text-transform: uppercase
+        letter-spacing: 5px
+        color: #ff0105
+      .b_caption::after
+        content: ' '
+        position: absolute
+        width: 40px
+        height: 2px
+        background: #fff
+        margin: 15px 0 0 3px
+      .b_text
+        margin: 35px 0 0 0
+        line-height: 36px
+        font-weight: 300
+        letter-spacing: 2px
+
+    //layout restoran
+    .l_restoran
+      width: 44%
+      height: 100%  
+      float: right
+      display: inline-block
+      vertical-align: top 
+      h1
+        font-size: 64px
         text-transform: uppercase
         letter-spacing: 5px
       .b_caption::after
@@ -229,15 +275,13 @@ table
         width: 40px
         height: 2px
         background: #fff
-        margin: 2px 0 0 3px
-      .b_caption, .b_phone, .b_mail, .b_adress
-        padding: 0 0 0 6.5%
+        margin: 15px 0 0 3px
       .b_phone, .b_mail, .b_adress
-        line-height: 26px
+        line-height: 30px
         font-weight: 300
       .b_phone
         white-space: pre-wrap
-        margin: 15px 0 0 0
+        margin: 35px 0 0 0
         color: #ff0105
         .i_number::before
           content: '+'
@@ -246,12 +290,19 @@ table
       .b_adress
         display: inline-block 
       .b_links
-        float: right
+        margin: 20px 0 0 0
+        .b_networks
+          display: inline-block
+          vertical-align: middle
+          font-weight: 900
+          text-transform: uppercase
+          color: #ff0105
         a
           display: inline-block
-          margin: 0 0 0 20px  
+          vertical-align: middle
+          margin: 0 0 0 15px  
         img
-          width: 22px
+          width: 24px
           transition: 0.3s
         a:hover img
           transform: scale(1.15)
@@ -259,45 +310,18 @@ table
       .b_photo
         margin: 40px 0 0 0
         width: 100%
-        img
-          width: 100%
+        height: 100%
+        background: url('../img/restoran.png') no-repeat 50% 50%
+        background-size: cover
       .b_photo::before
         content: ' '
         position: absolute
-        width: 2px
-        height: 40px
+        width: 40px
+        height: 2px
         background: #fff
-        left: 7%
-        margin-top: -20px
-
-    .l_about
-      text-transform: uppercase
-      margin: 5% 0 0 55%
-      .b_counter
-        margin: 0 0 0 5px
-      h1
-        font-size: 56px
-        text-transform: uppercase
-        letter-spacing: 5px
-        color: #ff0105
-      .b_text
-        padding: 0 0 0 20px
-        margin: 10px 0 0 10px
-        border-left: 1px solid #ff0105
-        line-height: 24px
-        font-weight: 300
-
-
-        
+        margin: 18.5% 0 0 -20px
 
     
-
-
-
-      
-
-  
-  
   
   //common class for all pages
   .l_page
