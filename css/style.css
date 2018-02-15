@@ -615,7 +615,9 @@ table {
   .b_list a, p, .b_adress, .b_phone, .b_mail {
     line-height: 24px !important; }
   .b_photo {
-    margin-top: 20px !important; } }
+    margin-top: 20px !important; }
+  .i_title::before {
+    line-height: 22px !important; } }
 
 @media screen and (max-width: 1300px) {
   .l_story .l_restoran .b_photo::after {
