@@ -235,7 +235,7 @@ table {
         content: '+';
         position: fixed;
         margin-left: -20px;
-        font-size: 16px; }
+        line-height: 32px; }
       .l_story .b_list a {
         line-height: 36px;
         -webkit-transition: 0.75s;
@@ -246,10 +246,14 @@ table {
       .l_story .b_list .i_title:hover a {
         color: #fff; }
     .l_story .b_about {
-      margin: 40px 0 0 40%;
+      position: fixed;
+      top: 40px;
+      right: 51%;
       text-align: right; }
     .l_story .b_restoran {
-      margin: 40px 0 0 5%; }
+      position: fixed;
+      top: 40px;
+      left: 55%; }
     .l_story .l_content {
       width: 100%;
       height: 66%;
@@ -263,7 +267,7 @@ table {
       vertical-align: top;
       text-transform: uppercase; }
       .l_story .l_about h1 {
-        font-size: 64px;
+        font-size: 72px;
         text-transform: uppercase;
         letter-spacing: 5px;
         color: #ff0105; }
@@ -280,13 +284,13 @@ table {
         font-weight: 300;
         letter-spacing: 2px; }
     .l_story .l_restoran {
-      width: 44%;
+      width: 45%;
       height: 100%;
       float: right;
       display: inline-block;
       vertical-align: top; }
       .l_story .l_restoran h1 {
-        font-size: 64px;
+        font-size: 72px;
         text-transform: uppercase;
         letter-spacing: 5px; }
       .l_story .l_restoran .b_caption::after {
@@ -334,16 +338,19 @@ table {
       .l_story .l_restoran .b_photo {
         margin: 40px 0 0 0;
         width: 100%;
-        height: 100%;
+        height: 65%;
         background: url("../img/restoran.png") no-repeat 50% 50%;
         background-size: cover; }
-      .l_story .l_restoran .b_photo::before {
+      .l_story .l_restoran .b_photo::after {
         content: ' ';
-        position: absolute;
+        position: fixed;
+        bottom: 5.9%;
+        margin: 0 0 0 -20px;
         width: 40px;
         height: 2px;
         background: #fff;
-        margin: 18.5% 0 0 -20px; }
+        text-transform: uppercase;
+        z-index: 6; }
   .l_page {
     position: fixed;
     width: 100%;
@@ -595,6 +602,22 @@ table {
     animation: invisible 3s 1 0s ease;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; } }
+
+@media screen and (max-height: 950px) {
+  .b_skip, .b_menu, .l_story {
+    font-size: 12px; }
+  .b_copyright {
+    font-size: 11px; }
+  h1 {
+    font-size: 48px !important; }
+  .b_list a, p, .b_adress, .b_phone, .b_mail {
+    line-height: 24px !important; }
+  .b_photo {
+    margin-top: 20px !important; } }
+
+@media screen and (max-width: 1300px) {
+  .l_story .l_restoran .b_photo::after {
+    display: none; } }
 
 @-webkit-keyframes rotate {
   0% {
