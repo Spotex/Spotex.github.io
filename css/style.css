@@ -553,36 +553,38 @@ table {
         transition: 0.75s; }
       .l_story .b_contacts a:hover {
         color: #ff0105; }
-    .l_story .b_about {
+    .l_story .b_list {
       text-transform: uppercase;
       font-weight: 300;
       font-size: 16px;
       margin: 20px 0 0 42%; }
-      .l_story .b_about a {
+      .l_story .b_list a {
         line-height: 30px;
         -webkit-transition: 0.75s;
         -o-transition: 0.75s;
         transition: 0.75s; }
-      .l_story .b_about a:hover {
+      .l_story .b_list a:hover {
         color: #ff0105; }
-    .l_story .l_about {
+    .l_story .b_list_2 {
+      display: none; }
+    .l_story .b_about {
       text-transform: uppercase;
       margin: 20px auto 0;
       width: 305px; }
-      .l_story .l_about .b_counter {
+      .l_story .b_about .b_counter {
         margin: 0 0 0 5px; }
-      .l_story .l_about h1 {
+      .l_story .b_about h1 {
         font-size: 46px;
         text-transform: uppercase;
         letter-spacing: 2px;
         color: #ff0105; }
-      .l_story .l_about .b_text {
+      .l_story .b_about .b_text {
         padding: 0 0 0 20px;
         margin: 10px 0 0 10px;
         border-left: 2px solid #ff0105;
         line-height: 24px;
         font-weight: 300; }
-        .l_story .l_about .b_text br {
+        .l_story .b_about .b_text br {
           display: none; }
   .l_page {
     position: fixed;
