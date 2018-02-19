@@ -83,6 +83,8 @@ table {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.33); }
+  .m_active {
+    color: #ff0105; }
   .m_visible {
     display: block;
     -webkit-animation: visible 3s 1 0s ease;
@@ -109,7 +111,7 @@ table {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     position: fixed;
-    top: 100px;
+    top: 90px;
     right: -2.5%;
     font-size: 18px;
     font-weight: 300;
@@ -245,103 +247,104 @@ table {
         color: #ff0105; }
       .l_story .b_list .i_title:hover a {
         color: #fff; }
-    .l_story .b_about {
+    .l_story .b_list {
       position: fixed;
       top: 40px;
       right: 51%;
       text-align: right; }
-    .l_story .b_restoran {
+    .l_story .b_list_2 {
       position: fixed;
       top: 40px;
-      left: 55%; }
+      left: 55%;
+      text-align: left; }
     .l_story .l_content {
       width: 100%;
       height: 66%;
-      position: fixed;
+      position: absolute;
       bottom: 0;
       left: 0; }
-    .l_story .l_about {
+    .l_story .b_about {
       width: 46%;
       margin: 0 0 0 3%;
       display: inline-block;
       vertical-align: top;
       text-transform: uppercase; }
-      .l_story .l_about h1 {
+      .l_story .b_about h1 {
         font-size: 72px;
         text-transform: uppercase;
         letter-spacing: 5px;
         color: #ff0105; }
-      .l_story .l_about .b_caption::after {
+      .l_story .b_about .b_caption::after {
         content: ' ';
         position: absolute;
         width: 40px;
         height: 2px;
         background: #fff;
         margin: 15px 0 0 3px; }
-      .l_story .l_about .b_text {
+      .l_story .b_about .b_text {
         margin: 35px 0 0 0;
         line-height: 36px;
         font-weight: 300;
         letter-spacing: 2px; }
-    .l_story .l_restoran {
+    .l_story .b_restoran {
       width: 45%;
       height: 100%;
       float: right;
       display: inline-block;
       vertical-align: top; }
-      .l_story .l_restoran h1 {
+      .l_story .b_restoran h1 {
         font-size: 72px;
         text-transform: uppercase;
         letter-spacing: 5px; }
-      .l_story .l_restoran .b_caption::after {
+      .l_story .b_restoran .b_caption::after {
         content: ' ';
         position: absolute;
         width: 40px;
         height: 2px;
         background: #fff;
         margin: 15px 0 0 3px; }
-      .l_story .l_restoran .b_phone, .l_story .l_restoran .b_mail, .l_story .l_restoran .b_adress {
+      .l_story .b_restoran .b_phone, .l_story .b_restoran .b_mail, .l_story .b_restoran .b_adress {
         line-height: 30px;
         font-weight: 300; }
-      .l_story .l_restoran .b_phone {
+      .l_story .b_restoran .b_phone {
         white-space: pre-wrap;
         margin: 35px 0 0 0;
         color: #ff0105; }
-        .l_story .l_restoran .b_phone .i_number::before {
+        .l_story .b_restoran .b_phone .i_number::before {
           content: '+';
           position: fixed;
           margin-left: -10px; }
-      .l_story .l_restoran .b_adress {
+      .l_story .b_restoran .b_adress {
         display: inline-block; }
-      .l_story .l_restoran .b_links {
+      .l_story .b_restoran .b_links {
         margin: 20px 0 0 0; }
-        .l_story .l_restoran .b_links .b_networks {
+        .l_story .b_restoran .b_links .b_networks {
           display: inline-block;
           vertical-align: middle;
           font-weight: 900;
           text-transform: uppercase;
           color: #ff0105; }
-        .l_story .l_restoran .b_links a {
+        .l_story .b_restoran .b_links a {
           display: inline-block;
           vertical-align: middle;
           margin: 0 0 0 15px; }
-        .l_story .l_restoran .b_links img {
+        .l_story .b_restoran .b_links img {
           width: 24px;
           -webkit-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
-        .l_story .l_restoran .b_links a:hover img {
+        .l_story .b_restoran .b_links a:hover img {
           -webkit-transform: scale(1.15);
           -ms-transform: scale(1.15);
           transform: scale(1.15);
           opacity: 0.7; }
-      .l_story .l_restoran .b_photo {
+      .l_story .b_restoran .b_photo {
         margin: 40px 0 0 0;
         width: 100%;
         height: 65%;
         background: url("../img/restoran.png") no-repeat 50% 50%;
         background-size: cover; }
-      .l_story .l_restoran .b_photo::after {
+      .l_story .b_restoran .b_photo::after {
         content: ' ';
         position: fixed;
         bottom: 5.9%;
