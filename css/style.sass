@@ -4,7 +4,7 @@
   padding: 0
   margin: 0
 html, body
-  min-width: 100%
+  width: 100%
   height: 100%
 body
   background: #333
@@ -20,7 +20,7 @@ table
   border-spacing: 0
 
 // Desktop styles
-@media screen and (min-width: 640px)
+@media screen and (min-width: 416px)
   .l_main
     width: 100%
     height: 100%
@@ -30,7 +30,7 @@ table
   //preloader
   .l_preloader
     display: none
-    position: fixed
+    position: absolute
     width: 100%
     height: 100%
     z-index: 12
@@ -88,7 +88,7 @@ table
   .l_map
     display: none
   .b_map
-    position: fixed
+    position: absolute
     width: 100%
     height: 100%
     left: 0
@@ -96,7 +96,7 @@ table
     z-index: 5      
   .b_menu
     transform: rotate(90deg)
-    position: fixed
+    position: absolute
     top: 90px
     right: -2.5%
     font-size: 18px
@@ -109,8 +109,8 @@ table
     a:hover
       color: #ff0105
   .b_copyright
-    position: fixed
-    position: fixed
+    position: absolute
+    position: absolute
     left: 3%
     transform: translateX(-3%)
     bottom: 6%
@@ -119,7 +119,7 @@ table
     text-transform: uppercase
     z-index: 6
   .b_skip
-    position: fixed
+    position: absolute
     left: 50%
     transform: translateX(-50%)
     bottom: 5%
@@ -212,7 +212,7 @@ table
         font-weight: 900
       .i_title::before
         content: '+'
-        position: fixed
+        position: absolute
         margin-left: -20px
         line-height: 32px
       a
@@ -222,13 +222,13 @@ table
         color: #ff0105
       .i_title:hover a
         color: #fff
-    .b_list
-      position: fixed
+    .b_list_1
+      position: absolute
       top: 40px
       right: 51%
       text-align: right
     .b_list_2
-      position: fixed
+      position: absolute
       top: 40px
       left: 55%
       text-align: left
@@ -294,7 +294,7 @@ table
         color: #ff0105
         .i_number::before
           content: '+'
-          position: fixed
+          position: absolute
           margin-left: -10px
       .b_adress
         display: inline-block 
@@ -324,7 +324,7 @@ table
         background-size: cover
       .b_photo::after
         content: ' '
-        position: fixed
+        position: absolute
         bottom: 5.9%
         margin: 0 0 0 -20px
         width: 40px
@@ -338,12 +338,14 @@ table
   
   //common class for all pages
   .l_page
-    position: fixed
+    position: absolute
     width: 100%
     height: 100%
+    min-width: 1200px
+    min-height: 600px
     z-index: 10   
     .b_logo
-      position: fixed
+      position: absolute
       padding: 3% 0 0 2%
       z-index: 10 
       img 
@@ -361,7 +363,7 @@ table
     background-size: cover
   .l_preloader
     display: none
-    position: fixed
+    position: absolute
     width: 100%
     height: 100%
     z-index: 5
@@ -410,12 +412,12 @@ table
   .l_map
     display: none 
   .b_map
-    position: fixed
+    position: absolute
     width: 100%
     height: 100%
     z-index: 5      
   .b_skip
-    position: fixed
+    position: absolute
     left: 50%
     transform: translateX(-50%)
     bottom: 5%
@@ -426,7 +428,7 @@ table
     transition: 0.5s
   .b_menu
     transform: rotate(90deg)
-    position: fixed
+    position: absolute
     top: 75px
     right: -15%
     font-size: 16px
@@ -559,12 +561,12 @@ table
 
 
   .l_page
-    position: fixed
+    position: absolute
     width: 100%
     height: 100%
     z-index: 10   
     .b_logo
-      position: fixed
+      position: absolute
       padding: 3% 0 0 2%
       z-index: 10 
       img 
