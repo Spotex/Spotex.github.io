@@ -97,7 +97,7 @@ table
   .b_menu
     transform: rotate(90deg)
     position: absolute
-    top: 90px
+    top: 75px
     right: -2.5%
     font-size: 18px
     font-weight: 300
@@ -273,7 +273,8 @@ table
       height: 100%  
       float: right
       display: inline-block
-      vertical-align: top 
+      vertical-align: top
+      overflow: hidden 
       h1
         font-size: 72px
         text-transform: uppercase
@@ -319,7 +320,7 @@ table
       .b_photo
         margin: 40px 0 0 0
         width: 100%
-        height: 65%
+        height: 60%
         background: url('../img/restoran.png') no-repeat 50% 50%
         background-size: cover
       .b_photo::after
@@ -341,8 +342,8 @@ table
     position: absolute
     width: 100%
     height: 100%
-    min-width: 1200px
-    min-height: 600px
+    min-width: 1000px
+    min-height: 570px
     z-index: 10   
     .b_logo
       position: absolute
@@ -564,6 +565,8 @@ table
     position: absolute
     width: 100%
     height: 100%
+    min-height: 640px
+    min-width: 360px
     z-index: 10   
     .b_logo
       position: absolute
@@ -596,15 +599,23 @@ table
   .i_title::before
     line-height: 22px !important
 
-@media screen and (max-width: 1300px)
+@media screen and (max-width: 1370px)
   .l_story .b_restoran .b_photo::after
     display: none
-@media screen and (max-width: 1000px)
-  .b_copyright
-    display: none
+
 @media screen and (max-height: 650px)
+  .b_skip, .b_menu, .l_story
+    font-size: 10px
   .b_copyright
-    display: none
+    font-size: 9px
+  h1
+    font-size: 42px !important
+  .b_list a, p, .b_adress, .b_phone, .b_mail
+    line-height: 20px !important
+  .b_photo
+    margin-top: 16px !important
+  .i_title::before
+    line-height: 18px !important
 
 
 
