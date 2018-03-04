@@ -84,16 +84,7 @@ table
     display: block
     animation: invisible 3s 1 0s ease
     animation-fill-mode: forwards
-  //map
-  .l_map
-    display: none
-  .b_map
-    position: absolute
-    width: 100%
-    height: 100%
-    left: 0
-    top: 0
-    z-index: 5      
+  
   .b_menu
     transform: rotate(90deg)
     position: absolute
@@ -118,6 +109,9 @@ table
     font-weight: 300
     text-transform: uppercase
     z-index: 6
+  //map
+  .l_map
+    display: none
   .b_skip
     position: absolute
     left: 50%
@@ -130,35 +124,49 @@ table
     z-index: 6
     transition: 0.5s
   .b_skip:hover
-    opacity: 0.6      
+    opacity: 0.6
+  .b_map
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    z-index: 5      
+  .b_skip
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 5%
+    font-size: 18px
+    font-weight: 300
+    text-transform: uppercase
+    letter-spacing: 3px
+    z-index: 6
+    transition: 0.5s
+  .b_skip:hover
+    opacity: 0.6
+
   .gm-style-mtc > div,
   .gmnoprint > div,
   .gm-fullscreen-control,
-  .gmnoprint,
   .gm-style > div:nth-of-type(2),
   .gm-svpc 
     display: none
+
   .poi-info-window div, .poi-info-window a
-    background-color: black !important
+    background-color: rgba(0, 0, 0, 0) !important
     color: #fff !important
-  .poi-info-window div
+    text-transform: uppercase !important 
+    font-weight: 400 !important
+    font-size: 14px !important
+    letter-spacing: 2px !important
+  .poi-info-window a
+    text-decoration: underline !important
   .poi-info-window .title
     color: #ff0105 !important
     font-weight: bold !important
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(2)
-    background-color: rgba(0, 0, 0, 0.5) !important
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(2)::before
-    content: ' '
-    position: absolute
-    width: 2px
-    height: 15px
-    background: #ff0105
-    left: 50%
-    top: 100px
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(3),
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(4)
-    display: none
   
+  //'x' skip window
   .gm-style-iw + div
     display: block
     height: 15px !important
@@ -194,6 +202,29 @@ table
     transform: rotate(-45deg)
   .gm-style-iw + div::after 
     transform: rotate(45deg)
+  
+  //background of innfo window
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(4)
+    background: rgba(0,0,0,0.5) !important
+  //arrow style
+  .gm-style > div > div > div > div > div > div > div > div:nth-of-type(1) > div,
+  .gm-style > div > div > div > div > div > div > div > div:nth-of-type(2) > div
+    background: rgba(0, 0, 0, 0) !important
+    box-shadow: none !important
+  //arrow's shadow
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(1)
+    display: none
+  //red middle stick
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(4)::before
+    content: ' '
+    position: absolute
+    width: 2px
+    height: 15px
+    background: #ff0105
+    left: 50%
+    bottom: -7px      
+  
+
   
 
   //our story block
@@ -411,7 +442,7 @@ table
 
   //map
   .l_map
-    display: none 
+    display: none
   .b_map
     position: absolute
     width: 100%
@@ -424,7 +455,7 @@ table
     bottom: 5%
     font-weight: 700
     text-transform: uppercase
-    z-index: 6
+    z-index: 100
     transition: 0.5s
   .b_menu
     transform: rotate(90deg)
@@ -444,31 +475,24 @@ table
   .gm-style-mtc > div,
   .gmnoprint > div,
   .gm-fullscreen-control,
-  .gmnoprint,
   .gm-style > div:nth-of-type(2),
   .gm-svpc 
     display: none
+
   .poi-info-window div, .poi-info-window a
-    background-color: black !important
+    background-color: rgba(0, 0, 0, 0) !important
     color: #fff !important
-  .poi-info-window div
+    text-transform: uppercase !important 
+    font-weight: 400 !important
+    font-size: 14px !important
+    letter-spacing: 2px !important
+  .poi-info-window a
+    text-decoration: underline !important
   .poi-info-window .title
     color: #ff0105 !important
     font-weight: bold !important
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(2)
-    background-color: rgba(0, 0, 0, 0.5) !important
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(2)::before
-    content: ' '
-    position: absolute
-    width: 2px
-    height: 15px
-    background: #ff0105
-    left: 50%
-    top: 100px
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(3),
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(4)
-    display: none
   
+  //'x' skip window
   .gm-style-iw + div
     display: block
     height: 15px !important
@@ -504,13 +528,35 @@ table
     transform: rotate(-45deg)
   .gm-style-iw + div::after 
     transform: rotate(45deg)
-
-  .b_skip a:nth-of-type(1), .b_restoran, .l_restoran, .b_text p:nth-of-type(2)
+  
+  //background of innfo window
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(4)
+    background: rgba(0,0,0,0.5) !important
+  //arrow style
+  .gm-style > div > div > div > div > div > div > div > div:nth-of-type(1) > div,
+  .gm-style > div > div > div > div > div > div > div > div:nth-of-type(2) > div
+    background: rgba(0, 0, 0, 0) !important
+    box-shadow: none !important
+  //arrow's shadow
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(1)
     display: none
+  //red middle stick
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(4)::before
+    content: ' '
+    position: absolute
+    width: 2px
+    height: 15px
+    background: #ff0105
+    left: 50%
+    bottom: -7px
+
+
 
   .l_story
     background: url('../img/bg-small-story.png') no-repeat 50% 50%
     background-size: cover
+    .b_skip a:nth-of-type(1), .b_restoran, .l_restoran, .b_text p:nth-of-type(2)
+      display: none
     .b_copyright
       display: none
     .b_contacts
@@ -553,6 +599,8 @@ table
         
         br
           display: none
+
+      
 
   
 

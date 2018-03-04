@@ -97,15 +97,6 @@ table {
     animation: invisible 3s 1 0s ease;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
-  .l_map {
-    display: none; }
-  .b_map {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 5; }
   .b_menu {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -136,6 +127,32 @@ table {
     font-weight: 300;
     text-transform: uppercase;
     z-index: 6; }
+  .l_map {
+    display: none; }
+  .b_skip {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 5%;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    z-index: 6;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+  .b_skip:hover {
+    opacity: 0.6; }
+  .b_map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5; }
   .b_skip {
     position: absolute;
     left: 50%;
@@ -156,29 +173,21 @@ table {
   .gm-style-mtc > div,
   .gmnoprint > div,
   .gm-fullscreen-control,
-  .gmnoprint,
   .gm-style > div:nth-of-type(2),
   .gm-svpc {
     display: none; }
   .poi-info-window div, .poi-info-window a {
-    background-color: black !important;
-    color: #fff !important; }
+    background-color: transparent !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    letter-spacing: 2px !important; }
+  .poi-info-window a {
+    text-decoration: underline !important; }
   .poi-info-window .title {
     color: #ff0105 !important;
     font-weight: bold !important; }
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(2) {
-    background-color: rgba(0, 0, 0, 0.5) !important; }
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(2)::before {
-    content: ' ';
-    position: absolute;
-    width: 2px;
-    height: 15px;
-    background: #ff0105;
-    left: 50%;
-    top: 100px; }
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(3),
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(4) {
-    display: none; }
   .gm-style-iw + div {
     display: block;
     height: 15px !important;
@@ -220,6 +229,23 @@ table {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(4) {
+    background: rgba(0, 0, 0, 0.5) !important; }
+  .gm-style > div > div > div > div > div > div > div > div:nth-of-type(1) > div,
+  .gm-style > div > div > div > div > div > div > div > div:nth-of-type(2) > div {
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(1) {
+    display: none; }
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(4)::before {
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #ff0105;
+    left: 50%;
+    bottom: -7px; }
   .l_story {
     background: url("../img/bg-story.png") no-repeat 50% 50%;
     background-size: cover;
@@ -445,7 +471,7 @@ table {
     bottom: 5%;
     font-weight: 700;
     text-transform: uppercase;
-    z-index: 6;
+    z-index: 100;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
@@ -471,29 +497,21 @@ table {
   .gm-style-mtc > div,
   .gmnoprint > div,
   .gm-fullscreen-control,
-  .gmnoprint,
   .gm-style > div:nth-of-type(2),
   .gm-svpc {
     display: none; }
   .poi-info-window div, .poi-info-window a {
-    background-color: black !important;
-    color: #fff !important; }
+    background-color: transparent !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    letter-spacing: 2px !important; }
+  .poi-info-window a {
+    text-decoration: underline !important; }
   .poi-info-window .title {
     color: #ff0105 !important;
     font-weight: bold !important; }
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(2) {
-    background-color: rgba(0, 0, 0, 0.5) !important; }
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(2)::before {
-    content: ' ';
-    position: absolute;
-    width: 2px;
-    height: 15px;
-    background: #ff0105;
-    left: 50%;
-    top: 100px; }
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(3),
-  .gm-style > div > div:nth-of-type(4) > div:nth-of-type(4) > div > div > div:nth-of-type(4) {
-    display: none; }
   .gm-style-iw + div {
     display: block;
     height: 15px !important;
@@ -535,11 +553,28 @@ table {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
-  .b_skip a:nth-of-type(1), .b_restoran, .l_restoran, .b_text p:nth-of-type(2) {
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(4) {
+    background: rgba(0, 0, 0, 0.5) !important; }
+  .gm-style > div > div > div > div > div > div > div > div:nth-of-type(1) > div,
+  .gm-style > div > div > div > div > div > div > div > div:nth-of-type(2) > div {
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(1) {
     display: none; }
+  .gm-style > div > div > div > div > div > div > div:nth-of-type(4)::before {
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #ff0105;
+    left: 50%;
+    bottom: -7px; }
   .l_story {
     background: url("../img/bg-small-story.png") no-repeat 50% 50%;
     background-size: cover; }
+    .l_story .b_skip a:nth-of-type(1), .l_story .b_restoran, .l_story .l_restoran, .l_story .b_text p:nth-of-type(2) {
+      display: none; }
     .l_story .b_copyright {
       display: none; }
     .l_story .b_contacts {
